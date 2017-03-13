@@ -57,7 +57,7 @@ gem 'jammit'
 gem 'docsplit'
 
 # Views & Javascript
-gem 'haml'
+gem 'haml', '>= 4.0.5'
 gem "compass", ">= 0.11.1"
 gem 'compass-960-plugin'
 gem 'jquery-rails'
