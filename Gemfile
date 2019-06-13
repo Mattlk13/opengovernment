@@ -60,7 +60,7 @@ gem 'docsplit'
 gem 'haml'
 gem "compass", ">= 0.11.1"
 gem 'compass-960-plugin'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 1.0.16'
 
 # JSON / APIs
 gem 'rabl'
