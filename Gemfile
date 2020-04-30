@@ -5,7 +5,7 @@ source 'http://rubygems.org'
 gem 'rake', '0.8.7'
 
 # Using 3.0.7 until "Cannot modify SafeBuffer in place" bug is fixed...
-gem 'rails', '3.0.19'
+gem 'rails', '4.0.0'
 
 gem 'rack-contrib'
 gem 'SystemTimer', :platforms => :ruby_18
@@ -60,11 +60,11 @@ gem 'docsplit'
 gem 'haml'
 gem "compass", ">= 0.11.1"
 gem 'compass-960-plugin'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 2.0.1'
 
 # JSON / APIs
 gem 'rabl'
-gem 'json'
+gem 'json', '>= 2.3.0'
 
 # Tagging
 gem 'acts-as-taggable-on'
@@ -80,7 +80,7 @@ gem 'govkit', '~> 0.7.4'
 gem 'thinking-sphinx', '~> 2.0.3'
 
 # Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 0.12.4'
 
 # Graphics
 gem 'googlecharts', '~> 1.6.1', :require => 'gchart'
@@ -95,10 +95,10 @@ end
 group :test, :development do
   gem 'database_cleaner'
   gem 'launchy'    # So you can do "Then show me the page"
-  gem 'rspec-rails', '2.5.0'
+  gem 'rspec-rails', '2.8.0'
   gem 'spork'
   gem 'capybara', '~> 0.4.1'
-  gem 'cucumber', '~> 0.10.0'
+  gem 'cucumber', '~> 0.10.7'
   gem 'cucumber-rails', '~> 0.3.2'
   gem 'autotest'
   gem 'autotest-rails'
@@ -115,6 +115,6 @@ group :test, :development do
   gem 'hirb'
   gem 'awesome_print'
   gem 'guard'
-  gem 'guard-livereload'
+  gem 'guard-livereload', '>= 0.2.0'
   gem 'rb-fsevent' 
 end
