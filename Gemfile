@@ -5,14 +5,14 @@ source 'http://rubygems.org'
 gem 'rake', '0.8.7'
 
 # Using 3.0.7 until "Cannot modify SafeBuffer in place" bug is fixed...
-gem 'rails', '3.0.19'
+gem 'rails', '4.0.0'
 
 gem 'rack-contrib'
 gem 'SystemTimer', :platforms => :ruby_18
 
 # ActiveRecord requires a database adapter.
 gem 'pg'
-gem 'mongo_mapper'
+gem 'mongo_mapper', '>= 0.9.1'
 gem 'bson_ext'
 
 # Bulk data importing
@@ -80,7 +80,7 @@ gem 'govkit', '~> 0.7.4'
 gem 'thinking-sphinx', '~> 2.0.3'
 
 # Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 0.12.4'
 
 # Graphics
 gem 'googlecharts', '~> 1.6.1', :require => 'gchart'
