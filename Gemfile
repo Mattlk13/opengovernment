@@ -5,18 +5,18 @@ source 'http://rubygems.org'
 gem 'rake', '0.8.7'
 
 # Using 3.0.7 until "Cannot modify SafeBuffer in place" bug is fixed...
-gem 'rails', '3.0.19'
+gem 'rails', '5.2.4.3'
 
 gem 'rack-contrib'
 gem 'SystemTimer', :platforms => :ruby_18
 
 # ActiveRecord requires a database adapter.
 gem 'pg'
-gem 'mongo_mapper'
+gem 'mongo_mapper', '>= 0.13.0'
 gem 'bson_ext'
 
 # Bulk data importing
-gem 'activerecord-import'
+gem 'activerecord-import', '>= 0.2.8'
 
 # Rails.cache
 gem 'memcache-client'
@@ -24,11 +24,11 @@ gem 'memcache-client'
 
 # Configuration/deploy management
 gem 'settingslogic'
-gem 'hoptoad_notifier'
+gem 'hoptoad_notifier', '>= 2.4.11'
 gem 'capistrano'
 gem 'capistrano-ext'
 gem 'rvm-capistrano'
-gem 'whenever', :require => false
+gem 'whenever', '>= 0.6.8', :require => false
 
 # An alternative form builder
 gem 'formtastic', '~> 1.1.0'
@@ -43,16 +43,16 @@ gem 'geokit'
 gem 'geoip'
 
 # Breadcrumbs & navigation
-gem 'simple-navigation'
+gem 'simple-navigation', '>= 3.3.4'
 
 # Static pages
 gem 'high_voltage'
 
 # Background tasks
-gem 'delayed_job', '~> 2.1'
+gem 'delayed_job', '~> 4.1', '>= 4.1.5'
 
 # Attachments & assets
-gem 'paperclip'
+gem 'paperclip', '>= 2.3.15'
 gem 'jammit'
 gem 'docsplit'
 
@@ -60,7 +60,7 @@ gem 'docsplit'
 gem 'haml'
 gem "compass", ">= 0.11.1"
 gem 'compass-960-plugin'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 # JSON / APIs
 gem 'rabl'
@@ -77,10 +77,10 @@ gem 'fastercsv'
 gem 'govkit', '~> 0.7.4'
 
 # Indexing and Search
-gem 'thinking-sphinx', '~> 2.0.3'
+gem 'thinking-sphinx', '~> 2.0.5'
 
 # Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 0.12.4'
 
 # Graphics
 gem 'googlecharts', '~> 1.6.1', :require => 'gchart'
@@ -95,7 +95,7 @@ end
 group :test, :development do
   gem 'database_cleaner'
   gem 'launchy'    # So you can do "Then show me the page"
-  gem 'rspec-rails', '2.5.0'
+  gem 'rspec-rails', '2.8.0'
   gem 'spork'
   gem 'capybara', '~> 0.4.1'
   gem 'cucumber', '~> 0.10.0'
